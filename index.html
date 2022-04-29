@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Validation</title>
+    <script src="script.js" defer></script>
+</head>
+<body class="d-flex jc-center al-center">
+    <div class="container p-2 w-40 mt-2">
+        <div class="mb-2">
+            <h2>Get Started</h2>
+        </div>
+    
+        <div>
+            <form action="">
+                <div class="user-input d-flex flex-col mb-2">
+                    <label for="Username">User Name</label>
+                    <input type="text" id="Username" autocomplete="off" placeholder="User name" class="p-half" name="UserName">
+                    <span class="warning-text fs-s"></span>
+                </div>
+                <div class="user-input d-flex flex-col mb-2">
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" autocomplete="off" placeholder="Email" class="p-half" name="UserName"> 
+                    <span class="warning-text fs-s"></span>
+                </div>
+                <div class="user-input d-flex flex-col mb-2">
+                    <label for="Password">Password</label>
+                    <input type="password" id="Password" placeholder="Password" autocomplete="off" class="p-half" name="UserName">
+                    <span  class="warning-text fs-s"></span>
+                </div>
+                <div>
+                    <button class="wc-100 btn rounded orange">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
