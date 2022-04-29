@@ -29,8 +29,6 @@ const validation = function(dataArray) {
 }
 
 function verify({invalid,valid}){
-    console.log(invalid);
-    console.log(valid);
     valid.forEach((element)=>{
         if (element) {
             element.style.borderColor = "green";
@@ -47,7 +45,7 @@ function verify({invalid,valid}){
         
     })
 
-    console.log(invalid.concat(valid));
+   
 
     const result = valid.every((element)=>{
         if(element)
@@ -69,13 +67,3 @@ submit.addEventListener("click",(e)=>{
     formSubmission();
 })
 
-//promises ke andar something like
-
-/*
-
-get the data then validate 
-
-resolve -> form submitted 
-reject -> form rejected 
-
-*/
